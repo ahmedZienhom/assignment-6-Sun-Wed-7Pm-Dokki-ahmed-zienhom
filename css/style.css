@@ -1,0 +1,335 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 26px;
+}
+a span {
+    font-weight: bold;
+}
+
+
+.container {
+    text-transform: capitalize;
+    display: grid;
+    grid-template-areas: 
+    "sm-1 sm-1"
+    "sm-2 sm-2"
+    "sm-3-1 sm-3-2"
+    "sm-4 sm-4"
+    "sm-5-1 sm-56-2"
+    "sm-6-1 sm-56-2"
+    "sm-7 sm-7"
+    "sm-8 sm-8"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.font {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.container .sm-1 {
+    grid-area: sm-1;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    background-color: #f7f8f9;
+    padding-block: 48px;
+}
+.container .sm-1 p, .container .sm-2 p, .container .sm-4 p {
+    text-transform: uppercase;
+    color: #9FA3A7;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+.container .sm-1 h1 {
+    font-size: 35px;
+    color: #333;
+    margin: 20px 0px 10px;
+    max-width: 550px;
+}
+.container .sm-1 a {
+    color: #27B9C2;
+    text-decoration: underline;
+}
+.container .sm-2 {
+    grid-area: sm-2;
+    display: grid;
+    grid-template-areas: 
+    "title image";
+    justify-content: space-around;
+    align-items: center ;
+    padding-inline: 5%;
+}
+.container .sm-2 .title {
+    width: 64%;
+    grid-area: title;
+}
+.container .sm-2 .title h3,
+.container .sm-5-1 h3,
+.container .sm-56-2 h2,
+.container .sm-7 h3,
+.container .sm-8 h3
+  {
+    margin: 10px 0 20px;
+}
+
+.container .sm-2 .capital {
+    text-transform: capitalize;
+}
+.container .sm-2 picture {
+    width: 250px;
+    grid-area: image;
+    padding-top: 40px;
+    margin-top: 48px;
+}
+
+.sm-3-1 {
+    grid-area: sm-3-1;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    background-color: #F05638;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+.sm-3-1 picture {
+    width: 320px;
+}
+.sm-3-1 .title h3 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+    max-width: 230px;
+}
+.sm-3-1 .title a {
+    margin-top: 20px;
+    color: #ffc80a;
+}
+.sm-3-2 {
+    padding-block: 30px;
+    display: grid;
+    grid-area: sm-3-2;
+    background-color: #f7f8f9;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+
+}
+.sm-3-2 picture {
+    width: 250px;
+}
+.sm-3-2 .title h3 {
+    font-size: 22px;
+    color: #333;
+    margin: 10px 0 20px;
+
+}
+.sm-3-2 .title a {
+    color: #27B9C2;
+}
+.sm-4 {
+    display: grid;
+    grid-template-areas: 
+    "upper-image right-image"
+    "picture ."
+    ;
+    grid-area: sm-4;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    justify-items: center;
+    padding-top: 68px;
+    padding-right: 4%;
+    padding-left: 4%;
+}
+.sm-4 .upper-image {
+    grid-area: upper-image;
+    width: 50%;
+}
+.sm-4 .right-image {
+    grid-area: right-image;
+    width: 85%;
+}
+.sm-4 .right-image a {
+    text-transform: uppercase;
+    color: #27B9C2;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.sm-4 picture  {
+    grid-area: picture;
+    width: 100%;
+    position: relative;
+    left: -10%;
+}
+
+.sm-5-1 {
+    grid-area: sm-5-1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #38d5f4;
+    color: #fff;
+
+}
+.sm-5-1 .blue {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #35CFED;
+    text-align: center;
+    padding-inline: 35px;
+}
+.sm-5-1 .blue img {
+    width: 45px;
+}
+.sm-56-2 {
+    grid-area: sm-56-2;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    color: #fff;
+    background-color: #8F76BC;
+    text-align: center;
+    padding: 30px 5% 70px;
+}
+.sm-56-2 .circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center ;
+    width: 373px;
+    height: 373px;
+    background-color: #8166b0;
+    border-radius: 50%;
+}
+
+.sm-56-2 .circle .pop {
+    text-align: center;
+    padding: 2px 13px 1px 30px;
+    background-image: url(../images/z02.png);
+    background-position: 12px 50%;
+    background-size: 12px;
+    background-repeat: no-repeat;   
+    border-radius: 60px;
+    background-color: #8F76BC;
+}
+
+.sm-56-2 .circle picture {
+    width: 240px;
+    margin-top: 20px;
+}
+.sm-56-2 .circle .meet {
+    text-transform: uppercase;
+}
+
+.container .sm-56-2 h2 {
+    text-transform: none;
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+.container .sm-56-2 > p {
+    width: 290px;
+    font-size: 14px;
+}
+
+.container .sm-56-2  a {
+    background-color: #ffc80a;
+    color: #000;
+    margin-top: 30px;
+    padding: 15px 30px;
+    border-radius: 60px;
+    font-size: 12px;
+    font-weight: bolder;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+.container .sm-6-1 {
+    display: grid;
+    grid-area: sm-6-1;
+    position: relative;
+    text-align: center;
+    background-image: url(../images/z04.png);
+    background-position: 50% 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color: #93B6B7;
+    color: #fff;
+}
+.container .sm-6-1  h3 {
+    margin: auto;
+    padding-block: 30px;
+    max-width: 280px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.container .sm-6-1  p, .container .sm-7 p {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    padding-inline: 10px;
+    border-radius: 5px;
+    font-size: 8px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background-color: #fa684f;
+}
+.container .sm-6-1 picture {
+    position: relative;
+    width: 90%;
+    align-self: self-end;
+    left: -7%;
+}
+
+.container .sm-7 {
+    grid-area: sm-7;
+    display: grid;
+    justify-items: center;
+    padding-block: 30px;
+    align-items: center;
+ }
+
+ .container .sm-7 p {
+    position: static;
+    background-color: #7bc424;
+    color: #fff;
+}
+.container .sm-8 {
+    display: grid;
+    grid-area: sm-8;
+    background-color: #2c2c2c;
+    color: #fff;
+    padding-inline: 5%;
+    grid-template-areas: 
+    "picture title";
+    align-items: center;
+    justify-content: center;
+    justify-items: flex-end;
+}
+.container .sm-8 picture {
+    width: 270px;
+    grid-area: picture;
+}
+.container .sm-8 h3 {
+    grid-area: title;
+    width: 60%;
+    font-size: 22px;
+}

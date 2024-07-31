@@ -1,0 +1,36 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: block ;
+    color: inherit;
+}
+.header-content .video-btn {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    transition: all 0.5s 0s ease-in-out;
+}
+.header-content .video-btn:hover {
+    color: #ce1212;
+}
+
+section {
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+}

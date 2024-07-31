@@ -1,0 +1,49 @@
+@media screen and (min-width: 990px) {
+    .container {
+        grid-template-areas: 
+        "lg-1-12 lg-1-12 lg-1-34 lg-1-34"
+        "lg-2-1 lg-2-23 lg-2-23 lg-23-4"
+        "lg-3-1 lg-3-23 lg-3-23 lg-23-4"
+        "lg-4-1 lg-4-2 lg-4-34 lg-4-34"
+        ;
+    }
+    .container .lg-1-12 {
+        grid-area: lg-1-12;
+    }
+    .container .lg-1-34 {
+        grid-area: lg-1-34;
+    }
+    .container .lg-2-1 {
+        grid-area: lg-2-1;
+    }
+    .container .lg-2-23 {
+        grid-area: lg-2-23;
+    }
+    .container .lg-23-4 {
+        grid-area: lg-23-4;
+    }
+    .container .lg-3-1 {
+        grid-area: lg-3-1;
+    }
+    .container .lg-3-23 {
+        grid-area: lg-3-23;
+    }
+    .container .lg-4-1 {
+        grid-area: lg-4-1;
+    }
+    .container .lg-4-2 {
+        grid-area: lg-4-2;
+    }
+    .container .lg-4-34 {
+        grid-area: lg-4-34;
+    }
+    .sm-4 picture {
+        margin-top: 20px;
+        width: 125%;
+        left: -40%;
+    }
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 25%;
+        grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    }
+}
